@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar'
 
 const ContactPage = () => (
   <div>
-    <Navbar />
+    {/* <Navbar /> */}
 
     <h1>Contact Page</h1>
   </div>

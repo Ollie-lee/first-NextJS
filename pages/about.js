@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div>This is about page</div>
     </>
   )
