@@ -4,12 +4,15 @@ import axios from 'axios'
 
 export default function Index({ posts, }) {
   // const { posts } = props
-  console.log(posts);
   return (
     <div>
       <ul>
         {posts.map(post => (
-          <li key={post.id}>{post.title}</li>
+          <li key={post.id}>
+            <Link href={`/post?id=${post.id}`}>
+              <a>{post.title}</a>
+            </Link>
+          </li>
         ))}
       </ul>
     </div>
