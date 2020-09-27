@@ -9,7 +9,12 @@ export default function Index({ posts, }) {
       <ul>
         {posts.map(post => (
           <li key={post.id}>
-            <Link href={`/post?id=${post.id}`}>
+            {/* page directory + query string */}
+            <Link
+              href={`/post?id=${post.id}`}
+              as={`/p/${post.id}`}
+            >
+
               <a>{post.title}</a>
             </Link>
           </li>
